@@ -666,6 +666,17 @@ void stl_access()
 	println("");
 }
 
+void stl_swap2()
+{
+	set<int> set1{0, 1, 2, 3, 4, 5};
+	set<int> set2{6, 7, 8, 9};
+	for (auto value : set1)
+	{
+		print("{} ", value);
+	}
+	println("");
+}
+
 void initFuncList()
 {
 	// REGISTERFUNC(stl_minmax)
@@ -689,5 +700,6 @@ void initFuncList()
 	// REGISTERFUNC(stl_expected)
 	// REGISTERFUNC(stl_constructor)
 	// REGISTERFUNC(stl_size)
-	REGISTERFUNC(stl_access)
+	// REGISTERFUNC(stl_access)
+	REGISTERFUNC(stl_swap2)
 }
